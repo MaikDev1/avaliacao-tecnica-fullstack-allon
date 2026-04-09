@@ -1,29 +1,28 @@
 export default function Hero() {
-  // função pra rolar até a seção de produtos quando clicar no botão
+  // função que faz a página rolar suavemente até a seção de produtos
   const scrollToProducts = () => {
-    const productsSection = document.getElementById('produtos');
-    if (productsSection) {
-      productsSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById('produtos').scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24">
-      <div className="max-w-6xl mx-auto text-center px-6">
-        <h1 className="text-6xl font-bold mb-6">
-         Bem vindo ! Integre seu banco com qualquer API
+    <div className="bg-gradient-to-br from-blue-700 via-indigo-600 to-violet-700 text-white py-28">
+      <div className="max-w-7xl mx-auto px-8 text-center">
+        <h1 className="text-7xl font-bold tracking-tighter leading-none mb-6">
+          Bem vindo !<br /> Allon
         </h1>
-        <p className="text-2xl mb-10 max-w-2xl mx-auto">
-          Smartconnector - A plataforma de integração visual Allon
+        <p className="text-2xl text-blue-100 max-w-2xl mx-auto mb-12">
+          Smartconnector — A plataforma de integração visual Allon
         </p>
         
-        {/* botão que rola pra baixo */}
-        <button 
-          onClick={scrollToProducts}
-          className="bg-white text-blue-700 px-10 py-5 rounded-2xl text-2xl font-semibold hover:bg-gray-100 transition"
+        {/* botão principal do hero */}
+        <a 
+          href="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Diagrama%20Allon.drawio.png&dark=auto#R%3Cmxfile%3E%3Cdiagram%20name%3D%22P%C3%A1gina-1%22%20id%3D%228D_l4HLnAKpgBWeG6dhA%22%3E7V3LdqM4Gn6WWficroVzxB2WiZN05Ux1JZVUT%2FcsFSPb6mDEgJzY%2FfQjiYtBxjY4yNjp1KICkhBI33%2FXL3lgjObLX2MYzX4jPgoGOvCXA%2BN6oOuaqZnsDy9ZpSWO46QF0xj7WaN1wRP%2BG2WFICtdYB8llYaUkIDiqFo4JmGIxrRSBuOYvFWbTUhQfWsEp2ij4GkMg83SP7BPZ2mpqzvr8q8IT2f5mzXbS2vmMG%2BcjSSZQZ%2B8lYqMm4Exigmh6dV8OUIBn7x8XtLnbrfUFh8Wo5A2eeDHyrwehz%2F%2B%2BvrH3ez5d0ySS%2B15qGdfi%2FyNaVj3mxUldJXPCm%2F%2BlN2SmM7IlIQwuFmXXsVkEfqIvxqwu3Wbb4RErFBjhX8hSlcZ4nBBCSua0XmQ1aIlpn%2BWrv%2FLu7qwsrvrZdazuFllN8WsMnJEZI5ovGLfHaMAUvxaHR%2FM6GJatCsefSCYjVwHOQ17GYAZBRvAqnaRkEU8RtlTZQCkjtiTuzuiMJ4iutERuyiNZ10k8G2BtQtaYC3GtKMzw%2BqTKMCFbpXoQttJFWxs8erP8k2Jlvjt%2BjFxV6YmJm0EKDtmwnTeSXYVnNuCqgHzA6FaBhU0BDUjhQLXblA17D5RzXHYLYWZRon4JWsFgwAFZBrDORtihGLMvgPFct3DuuLqbYYpeoqgoIc3pryrmEzwEuXqOL0PghEJSCxebQBgATTh5SSkpfKJ%2BMfKExqTF1R5Qru%2BGhUAvMJgkQ1joNsBG%2BPVM7uY8osfCyTm%2BunHt6IuzisfkI99krDqEQknOJ5DcZc2Y5Nd9JK9B8UULUszuAnprKS%2Fc1n%2Fttb1mp2VZb2YVSmu59XdE4F94kTg2DZwYRsiMA392nIaEcHlNF6w72at7igKk01CiAivTMlBKf5WFf%2FCoFNPAO6JEwBg8APQTgpYDgCNCOAWBzTmBLBdAtyFr4ORMbjUAqxaCEhEYHjHIoJc3JwsEUwANECNFADiXx0RXF07oCER%2FIxhmEwIk%2FKc2a%2FLsr4kCdjAWO3lw90xScCyj0YCegsT75%2FppBm27FuZFwe6aSbY25ViR81sY9L%2FM%2FG2Nnzpg%2FFmCqlvvK1PvPfg7exnyqZ4O2bfeNtduuym3SdhVF32pnGYCxUeu2W%2Bk%2FLeGYcxPiiojeMwSkB1%2BwTVbOSBxzMyf14kTQzpiuGMLM1s5z1d6aCp4fwfyHwiKLwjR%2FxvkE3D%2Bf7fA%2BNWqc2sV21mWfaqs5k9u0t2dE6HHXuVsWa%2F7Ohsh7DGFY7JGCUN2PIZjl%2BmAq37BQ1wuMXPtU3Hdp027GpopsG0UhN2%2FXb%2FK7uEc%2F5p4XMSiYdAs6Kbx8f7zpjYrmFis8rEmmx7e8oc33YBsHMC%2FBFNcUJFVOMmjrsLYNbhJwWwNSmAaTqWIvw8t0sh7PUphNt4QIoXHC1QTwZHEsJenzzpuwA4RhuevLQAMJvZTN8JxRM8Fkz5tIgYtSCVfFnkA%2BS9SD5uEZjoni%2FbZH3s48s8LHoKxlFDX0VTwpf9GkdWq3WChCLOgOXlAV7U3aqAUufm%2B%2F3Pu9u70eUjZ9TfH%2B4ff94oVaBelVEN91iManfpxVj66TBqrxk7dq8KNIdhT1ChmHetdWDBBtDTWhmu%2BrVjN%2BS9S7qAAf5bKEnC%2BY9CuuCLsemSbLE42xE7mjXsKC3EObp1JHvWbhOo38uO5vmxo5oYn94rO5qq2VGpKkydR%2BAzSxXsiPn1wYfq4gKO1iUfnlDOY7982Gsiq9Uo5fE9fDiBtlvHh9sTVUaOYTVPVKFwzr684MZOwzoN2M8DVfazgSr2s5oti5yqyExDbyK1DNzCYAb7RKlYEeleSOpdCsmzWQFpKux6ze%2B2Gq1knKywe0QRoljErsNX3K%2BUU%2BZ7W40WH05WynFkhIjbzI4spdLeP%2F0c8OWAWwWuW%2B4t7VhK8rRqJEVXhqbTacjzcykic4i3kMGRpGijpYh3RVJULgE%2BpGsjdSnujyiJSEK7s0ycGslq7%2BbFIsrZPS92uRHRPqHlh37dN6tPXrQbLT8cmiql1Jp5WnA2JEdOhfLkVXhl0RK7WTZxEOAoQe1FpMpg8y2ec3ea%2B9S3wWLZnaXp7gdI044mEO2Pkzvae6a4uz%2Bdv2mm%2BIZGPHqmuNNlpnju0JyVpjQNt6wrh%2BAC6N4ehSnuSkvZrbSo16cWdbpc7%2B3XMqoIgqZoM%2Fu56qd4tqEQ7H7dF7dRxJtpNbpfKW9VpUkEw0qH9v8W%2FMSZq3GqkC%2F5cKfPvzBaYaMA%2BZ8vok%2FAdfpwAuc4WKVNv6LgFVE8hqX6RJACr9X0aFmuSF%2FKa0K%2BhTMo1b3CGEP2N8BTSBcxP%2BJnZ7sxjGqaBIwUUTxkgxzjcLpZT%2BJoBsPsQT0t4xM6hOy9YVo8ZpMvEl7yOswYgOPBK0E%2BIFFD892o%2BZt4mtpVakaIk4ZKr3kjsV%2F9sKKv4Rt6fsGsO95nah4NM0Ok0k5gLvqomcV1wtxQglLnBwdwFMsXX0rD8NGYxIzASTikMzx%2BCUWGHn8ch5ji%2FA1y2xKcO9uVPqfSbhIQSOWZ83ESBXCVNxeZfzr4F57z9DsYpgZeTrNrk0824e9%2BqzcNi7KUD7qNTUqhSdny0F1dNhe6kx2NAsifsuNTdnzKjv5lh75fdsj7W5VtjHIbLWu8U3L4%2BLVWcOzgn204bRVC9UQs2CwfGyeSUl3AERn6MH75pVZsib%2BCC3gsTRB%2F6eLLl2b09J2n3rjGli05W4iqKBYz9w5SM%2FaSmgYkt9Z0lWmpRgH6T1r7wLQmLdcq3NOgd%2Bg6e6fjOh%2B4wOd0tdmo1131OQ7nIkDWa3vFGVXpOWZb19VVMqMmbTAypY2bpnwAaXe4HXiiSehf8jN72V1m5ZXwq7JXDZr7ZiiXTbWkWyPDtsac2TfCValBxMO%2FSekD5INfJcfQrJ7Uyy7SHts93f5gI3nFSe5IcTDbczqU0OZ5BrO9qpQGYuVMVXjT7DWWXWxnPFwIjAOYJHjMLTM2WLpZ%2FCHEgyvZ47bdRjy40kmEjpz221Q8uJ6UWXdk8cD8kjNV9lkSMRjFWIS3jq7o3aqedyVBb%2B0i2XfyuH6mmK0zrIC%2F8%2FDIY%2BJmVXHTlWXwa%2BAYa08qcMuOAE1zQq5gON6SE3JE2DYOBFYIWxsTao9K3ao7SwaLo%2B5o9XPRzoZhVNE1Wxnv8iGx8naPptrZkIwETU4XU66d25zl0hPpnQdFWZp2YdVSRTOaMoyOaKrmQ%2BRlB%2BVUdeDvz3xSlQymbb5HTlnyRoxDaWrjM45NUdq5ehEnETKUTBsDHM200c7Vk3gifNtvsf%2F%2BBFAz5UQUhagZZ4raM%2FH5xEYxSbds7%2FsNgSPCZx%2BR6Q48af5A9TtQs0Tl9amnN%2BNoEnym3EXjgJwUDjBlOjhYlbLb9e8Ops3Xv95o3Pwf%3C%2Fdiagram%3E%3C%2Fmxfile%3E#%7B%22pageId%22%3A%228D_l4HLnAKpgBWeG6dhA%22%7D" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-blue-700 hover:bg-blue-50 px-12 py-6 rounded-3xl text-2xl font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl"
         >
           Ver o Fluxo de Integração
-        </button>
+        </a>
       </div>
     </div>
   );
