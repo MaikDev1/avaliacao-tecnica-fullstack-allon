@@ -1,16 +1,32 @@
-# React + Vite
+# Avaliação Técnica - Desenvolvedor Full Stack (Allon)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá! Este é o meu projeto da avaliação técnica para a vaga de **Desenvolvedor Full Stack - Software & Integração**.
 
-Currently, two official plugins are available:
+## O que eu entreguei
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Tarefa 1 – Aplicação React** (40% da nota)  
+  Uma landing page completa com seção de produtos e carrinho de compras funcional.
 
-## React Compiler
+- **Tarefa 2 – Fluxo de Integração** (60% da nota)  
+  Fluxo completo que pega dados do banco de dados, processa e envia para a API mockada (`POST /pedidos`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias usadas
 
-## Expanding the ESLint configuration
+- **Frontend**: React + Vite + Tailwind CSS
+- **Integração**: SQL com JOINs, transformação de dados e documentação de fluxo
+- **Ferramentas**: Draw.io (para o diagrama), Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como rodar o projeto
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/MaikDev1/avaliacao-tecnica-fullstack-allon.git
+
+# 2. Entre na pasta
+cd avaliacao-tecnica-fullstack-allon
+
+# 3. Instale as dependências
+npm install
+
+# 4. Rode o projeto
+npm run dev

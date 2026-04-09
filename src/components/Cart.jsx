@@ -1,10 +1,12 @@
 export default function Cart({ cart }) {
+  // calculo do total toda vez que o carrinho muda
   const total = cart.reduce((acc, item) => acc + (item.preco * item.quantity), 0);
 
   return (
     <div className="fixed bottom-8 right-8 bg-white shadow-2xl rounded-3xl p-6 w-96 max-h-[70vh] overflow-auto border border-gray-200 z-50">
       <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-        🛒 Carrinho <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{cart.length}</span>
+        🛒 Carrinho 
+        <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{cart.length}</span>
       </h3>
       
       {cart.map((item) => (
