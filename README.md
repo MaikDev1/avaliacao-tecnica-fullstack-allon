@@ -4,10 +4,10 @@ Olá! Este é o meu projeto da avaliação técnica para a vaga de **Desenvolved
 
 ## O que eu entreguei
 
-- **Tarefa 1 – Aplicação React** (40% da nota)  
+- **Tarefa 1 – Aplicação React**  
   Uma landing page completa com seção de produtos e carrinho de compras funcional.
 
-- **Tarefa 2 – Fluxo de Integração** (60% da nota)  
+- **Tarefa 2 – Fluxo de Integração** 
   Fluxo completo que pega dados do banco de dados, processa e envia para a API mockada (`POST /pedidos`).
 
 ## Tecnologias usadas
